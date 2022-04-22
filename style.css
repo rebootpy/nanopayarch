@@ -1,0 +1,248 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+body {
+	font-family: Montserrat-Bold;
+	background-color: rgb(25 164 217 / 10%);
+}
+
+.img img {
+	width: 200px;
+}
+.selection {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.info {
+	display: grid;
+  grid-template-columns: 1fr;
+}
+.titles h1 {
+	font-weight: bold;
+	    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-weight: 800;
+    color: #091233;
+    line-height: 68px;
+    margin-top: 40px;
+    font-size: 56px;
+}
+.card {
+	opacity: 0;
+}
+.card img {
+	width: 40px;
+}
+.img {
+	padding: 40px;
+}
+.info {
+	padding: 40px;
+}
+.titles p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-size: 34px;
+    font-weight: 700;
+    color: #091233;
+    line-height: 45px;
+    margin-top: 26px;
+    position: relative;
+    display: inline-block;
+}
+.titles p span {
+	    list-style: none;
+    font-size: 34px;
+    line-height: 45px;
+    box-sizing: border-box;
+    font-weight: 700;
+    color: #ff910e;
+}
+.titles {
+	padding-bottom:10px;
+}
+.contenido {
+	max-width: 100%;
+}
+.formulario {
+	max-width: 100%;
+	padding: 40px;
+}
+form {
+	text-align: center;
+	border-radius: 16px;
+	padding: 50px;
+	    background: #fff;
+    box-shadow: 0 0 8px 0 rgb(25 164 217 / 10%);
+}
+.decoracion {
+	padding: 40px;
+	width: 100%;
+}
+.decoracion img {
+	width: 400px;
+}
+form input {
+	padding-top: 5px;
+	padding-right: 200px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	margin-bottom: 30px;
+	border-bottom: .8px solid rgba(0,0,0,.5);
+}
+form button {
+	    list-style: none;
+    text-decoration: none;
+    border: none;
+    font: inherit;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    display: inline-block;
+    outline: 0;
+    line-height: 1;
+    white-space: nowrap;
+    text-align: center;
+    margin: 0;
+    transition: .1s;
+    font-weight: 500;
+    color: #fff;
+    border-color: #32bae3;
+    width: 100%;
+    height: 64px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    background: #767777;
+    background-color: rgb(50,186,227);
+    margin-bottom: 15px;
+}
+form input::active{
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px solid #000;
+}
+form h1,p{
+	text-align: center;
+}
+footer {
+	padding: 30px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background: #091233;
+}
+footer .paralax {
+    line-height: 1.2;
+    border: none;
+    background: rgba(178,221,250,.06);
+    border-radius: 8px;
+    padding: 17px 26px;}
+footer .paralax h1 {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-size: 14px;
+    color: #b2ddfa;
+    line-height: 18px;
+}
+footer .paralax p {
+	    color: rgba(248,248,250,.7);
+    padding: 0;
+    margin: 0;    margin-top: 16px;
+    font-size: 14px;
+    float: left;
+}
+@media (max-width: 1100px) {
+	.card {
+		opacity: 1;
+	}
+	form {	padding: 15px;
+}
+	.card img {
+	opacity: 1;
+	width: 250px;
+}
+	.info {
+	display: grid;
+  grid-template-columns: 1fr ;
+}
+	footer {
+		padding: 0;
+	}
+	footer {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: #091233;
+}
+}
+@media (max-width: 800px) {
+	footer {
+	max-width: 100%;
+	grid-template-columns: 1fr;
+	background: #091233;
+}
+}
+@media (max-width: 1000px) {
+	.formulario {
+		padding: 0px;
+	}
+	.selection {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.img img {
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+	.titles h1{
+		text-align: center;
+		font-size: 40px;
+		line-height: 35px;
+	}
+	.titles {
+		text-align: center;
+	}
+	.titles p {
+		text-align: center;
+		font-size: 20px;
+	}
+	.titles p span {
+		font-size: 20px;
+	}
+	.decoracion img {
+	display: none;
+	}
+	form input {
+	padding-top: 5px;
+	padding-right: 120px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	margin-bottom: 30px;
+	}
+}
